@@ -1,7 +1,7 @@
-import * as React from "react"
-import { Layout, Row, Col } from "antd"
-import Editor from "./components/Editor/Index"
-import Previewer from "./components/Previewer/Index"
+import * as React from 'react'
+import { Layout, Row, Col } from 'antd'
+import Editor from './components/Editor/Index'
+import Previewer from './components/Previewer/Index'
 
 const { Header, Content } = Layout
 
@@ -11,7 +11,7 @@ interface State {
 
 export default class App extends React.Component<{}, State> {
   state: State = {
-    inputText: "",
+    inputText: '',
   }
 
   updateTextInPreviewer = (changedText: string) => {
