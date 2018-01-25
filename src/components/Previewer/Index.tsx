@@ -23,11 +23,15 @@ export default class Editor extends React.Component<Props, {}> {
   render() {
     return (
       <div style={rootStyle}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: marked(this.props.inputText, markedOptions),
-          }}
-        />
+        {this.props.inputText.trim().length === 0 ? (
+          <div>Rendered markdown will appear here...</div>
+        ) : (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: marked(this.props.inputText, markedOptions),
+            }}
+          />
+        )}
       </div>
     )
   }

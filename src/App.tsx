@@ -30,7 +30,7 @@ export default class App extends React.Component<{}, State> {
       <Layout>
         <Layout>
           <Header>
-            <HeaderComponent />
+            <HeaderComponent inputText={this.state.inputText} />
           </Header>
           <Content style={contentStyles}>
             <Row gutter={8}>

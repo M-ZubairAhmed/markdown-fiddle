@@ -20,7 +20,7 @@ export default class Editor extends React.Component<Props, {}> {
       <div>
         <TextArea
           style={textareaStyle}
-          placeholder="Start writing your markdown...."
+          placeholder="Start writing your markdown here...."
           onChange={e => this.props.updateTextInPreviewer(e.target.value)}
         />
       </div>
