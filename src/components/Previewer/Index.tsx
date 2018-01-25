@@ -9,10 +9,8 @@ const rootStyle = {
   height: '98vh',
   padding: '10px',
   background: '#fff',
-  margin: '5px',
   borderRadius: '5px',
 }
-
 const markedOptions = {
   gfm: true,
   tables: true,

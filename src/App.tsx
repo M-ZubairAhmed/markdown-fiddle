@@ -1,12 +1,17 @@
 import * as React from 'react'
 import { Layout, Row, Col } from 'antd'
+const { Header, Content } = Layout
+
+import HeaderComponent from './components/Header/Index'
 import Editor from './components/Editor/Index'
 import Previewer from './components/Previewer/Index'
 
-const { Header, Content } = Layout
-
 interface State {
   inputText: string
+}
+
+const contentStyles = {
+  margin: 10,
 }
 
 export default class App extends React.Component<{}, State> {
@@ -24,13 +29,15 @@ export default class App extends React.Component<{}, State> {
     return (
       <Layout>
         <Layout>
-          <Header>as</Header>
-          <Content>
-            <Row>
-              <Col span={12}>
+          <Header>
+            <HeaderComponent />
+          </Header>
+          <Content style={contentStyles}>
+            <Row gutter={8}>
+              <Col md={24} lg={12}>
                 <Editor updateTextInPreviewer={this.updateTextInPreviewer} />
               </Col>
-              <Col span={12}>
+              <Col md={24} lg={12}>
                 <Previewer inputText={this.state.inputText} />
               </Col>
             </Row>
