@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Input } from 'antd';
 
 interface Props {
-  updateTextInPreviewer: (event: any) => void;
+  updateTextInPreviewer: (event: string) => void;
 }
 
 const { TextArea } = Input;

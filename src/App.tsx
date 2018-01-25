@@ -9,7 +9,7 @@ interface State {
   inputText: string;
 }
 
-export default class App extends React.Component<State, {}> {
+export default class App extends React.Component<{}, State> {
   state: State = {
     inputText: '',
   };
