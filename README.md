@@ -3,4 +3,3 @@
 <p align="center">
   <img src="https://i.imgur.com/HIFl31Ml.jpg"/>
 </p>
-<h2 align="center">repo's subtitle/moto</h2>
